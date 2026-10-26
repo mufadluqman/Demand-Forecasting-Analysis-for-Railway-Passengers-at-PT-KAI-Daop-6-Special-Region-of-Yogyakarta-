@@ -2,7 +2,7 @@
 
 Six-month forecast (Sep 2026 – Feb 2027) of monthly railway passenger departures in DIY, using a seasonal ARIMA, a tuned Prophet, and their ensemble, evaluated under a locked protocol (rolling-origin CV plus a one-shot final test). Built in R. Data through Aug 2026.
 
-![Forecast](output/figures/16_forecast_final.png)
+![Forecast](16_forecast_final.png)
 
 ## Key results
 
@@ -60,7 +60,7 @@ Capacity, scheduling, and resource planning for rail services need a demand outl
 - Level series is non-stationary (ADF p = 0.979, KPSS p ≤ 0.01 on training data); one regular difference suffices (d = 1, D = 0). A positive ACF spike at lag 12 points to a seasonal AR term.
 - Level shifts are suggested around May 2021, Apr 2022, Apr 2023, and Mar 2025 (indicative only; a mean-shift model slices a trending series into steps).
 
-![Trend](output/figures/01_tren_penumpang.png)
+![Trend](01_tren_penumpang.png)
 
 **Selected models**
 
